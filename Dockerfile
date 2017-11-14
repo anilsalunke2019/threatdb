@@ -4,7 +4,7 @@ MAINTAINER Ningappa <ningappa.kamate787@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
-  apt-get -y install supervisor wget curl git apache2 libapache2-mod-php5 mysql-server php5-mysql php5-curl php5-gd pwgen php-apc php5-mcrypt zip unzip  && \
+  apt-get -y install supervisor wget curl git apache2 libapache2-mod-php5 mysql-server php5-mysql  php5-json php5-curl php5-gd pwgen php-apc php5-mcrypt zip unzip  && \
   echo "ServerName localhost" >> /etc/apache2/apache2.conf && rm /var/www/html/index.html
 
 RUN sed -i -e 's/^bind-address\s*=\s*127.0.0.1/#bind-address = 127.0.0.1/' /etc/mysql/my.cnf
