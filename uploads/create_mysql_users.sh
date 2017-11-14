@@ -2,6 +2,9 @@
 sed -i "s/skip-external-locking/skip-external-locking\ninnodb_use_native_aio = 0\n/" /etc/mysql/my.cnf
 /usr/bin/mysqld_safe > /dev/null 2>&1 &
 
+chown -R mysql:mysql /var/lib/mysql/ 
+chmod -R 755 /var/lib/mysql/
+
 RET=1
 while [[ RET -ne 0 ]]; do
     echo "=> Waiting for confirmation of MySQL service startup"
