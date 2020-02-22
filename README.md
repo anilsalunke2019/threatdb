@@ -1,6 +1,6 @@
 # lamp-wordpress-docker
 ```
-docker build -t ubuntu-wordpress https://github.com/ningappa/ubuntu-trusty-wordpress.git
+docker build -t ubuntu-wordpress https://github.com/anilsalunke2019/ubuntu-trusty-wordpress.git
 ```
 ```
 docker run -d --name 6thstreet \
