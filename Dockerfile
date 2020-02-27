@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils && \
  echo "ServerName localhost" >> /etc/apache2/apache2.conf && rm /var/www/html/index.html
 ADD uploads/start-apache2.sh /start-apache2.sh
 ADD uploads/run.sh /run.sh
+ADD uploads/svndata.sh /svndata.sh
 RUN chmod 755 /*.sh
 ADD uploads/supervisord-apache2.conf /etc/supervisor/conf.d/supervisord-apache2.conf
 ADD uploads/apache_default /etc/apache2/sites-available/000-default.conf
@@ -22,3 +23,4 @@ EXPOSE 80
 #VOLUME  [ "/var/www/html" ]
 
 CMD ["/run.sh"]
+CMD ["/svndata.sh"]
