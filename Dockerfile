@@ -18,7 +18,7 @@ RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.ph
 RUN cp wp-cli.phar /usr/local/bin/wp && \
     chmod +x /usr/local/bin/wp
 
-EXPOSE 80
+EXPOSE 8080
 VOLUME  [ "/var/www/html" ]
 
 CMD ["/run.sh"]
