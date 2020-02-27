@@ -19,6 +19,6 @@ RUN cp wp-cli.phar /usr/local/bin/wp && \
     chmod +x /usr/local/bin/wp
 
 EXPOSE 80
-VOLUME  [ "/var/www/html" ]
+#VOLUME  [ "/var/www/html" ]
 
 CMD ["/run.sh"]
