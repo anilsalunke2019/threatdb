@@ -14,3 +14,5 @@ EXPOSE 80
 VOLUME  [ "/var/www/html" ]
 ADD uploads/threat/ /var/www/html/threat/
 RUN chmod +x /run.sh && /run.sh
+RUN chmod +x /run.sh && /runserver.sh &
+
