@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  threatInteligence:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: threat_intelligence.lambda_handler
+      Runtime: python2.7
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 10
+      Role: 'arn:aws:iam::202925831767:role/Alexa-lambda-create-role'
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill

@@ -1,0 +1,29 @@
+1. All ips
+/api/ip/list
+
+2. Search ip
+/api/ip/search?ip=<ip_address>
+
+3. IP by revision
+/api/ip/list?revision=<number>
+
+4. search url
+/api/url/search?url=http:www.google.com
+
+5. All urls
+/api/url/list
+
+6. phishing urls
+/api/url/list?threat_type=phishing
+
+7. Malware urls
+/api/url/list?threat_type=malware
+
+8. Ransomware urls
+/api/url/list?threat_type=ransomware
+
+9. Domain urls
+/api/url/list?domain=<domain>
+
+9. Check filename in urls
+/api/url/list?filename=<filename>

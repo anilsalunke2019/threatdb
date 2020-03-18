@@ -1,0 +1,9 @@
+https://api.metadefender.com/v4/feed/infected/
+https://api.metadefender.com/v4/feed/infected/latest
+https://api.metadefender.com/v4/feed/clean/latest
+apikey = 756e885816826ebcf4b96ee4f8f16389
+
+phishtank
+
+virus total
+a50a40b0323fd4ff3aae14e2e8cc2f446037c99d68a85f1cc75a6b71a56a9da5

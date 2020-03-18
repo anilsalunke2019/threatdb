@@ -1,0 +1,16 @@
+http://172.16.0.188/threat_intelligence/apacheParser.php
+http://172.16.0.188/threat_intelligence/sshParser.php
+http://172.16.0.188/threat_intelligence/sipParser.php
+http://172.16.0.188/threat_intelligence/mailParser.php
+http://172.16.0.188/threat_intelligence/imapParser.php
+http://172.16.0.188/threat_intelligence/greenSnowParser.php
+http://172.16.0.188/threat_intelligence/ftpParser.php
+http://172.16.0.188/threat_intelligence/bruteForceLoginParser.php
+http://172.16.0.188/threat_intelligence/badguysParser.php
+http://172.16.0.188/threat_intelligence/badipsParser.php
+http://172.16.0.188/threat_intelligence/emergingThreatsParser.php
+http://172.16.0.188/threat_intelligence/osintParser.php
+http://172.16.0.188/threat_intelligence/otxParser.php
+http://172.16.0.188/threat_intelligence/botsParser.php
+http://172.16.0.188/threat_intelligence/feodoParser.php
+http://172.16.0.188/threat_intelligence/strongipsParser.php

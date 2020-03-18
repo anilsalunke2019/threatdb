@@ -1,0 +1,85 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "threat intelligence",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TopOneorFiveThreatIntent",
+                    "slots": [
+                        {
+                            "name": "is_or_are",
+                            "type": "AMAZON.Actor"
+                        },
+                        {
+                            "name": "top_or_critical",
+                            "type": "AMAZON.Actor"
+                        }
+                    ],
+                    "samples": [
+                        "what {is_or_are} the {top_or_critical} threads for the day",
+                        "what {is_or_are} the {top_or_critical} thread for the day",
+                        "what {is_or_are} the {top_or_critical} threats for the day",
+                        "what  {is_or_are} {top_or_critical} threats for the day",
+                        "what  {is_or_are} the {top_or_critical} threats for the day",
+                        "what {is_or_are} the {top_or_critical} threat for the day"
+                    ]
+                },
+                {
+                    "name": "AlertNotifiactionThreatsIntent",
+                    "slots": [],
+                    "samples": [
+                        "what are the the todays alarm",
+                        "what are the the today alarm",
+                        "what are alarm",
+                        "what are alarms",
+                        "what are the the today alarms",
+                        "what are the the todays alarms ",
+                        "l t s alarms",
+                        "lts alarms",
+                        "lts alarm",
+                        "l t s alarm",
+                        "alarm",
+                        "alert notifications",
+                        "alert notification"
+                    ]
+                },
+                {
+                    "name": "NumberofThreatsIntent",
+                    "slots": [
+                        {
+                            "name": "number_of_required",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "critical {number_of_required} threat",
+                        "top {number_of_required} threat",
+                        "top {number_of_required} threats",
+                        "critical {number_of_required} threats"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

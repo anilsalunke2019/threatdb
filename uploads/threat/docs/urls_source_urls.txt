@@ -1,0 +1,7 @@
+http://172.16.0.188/threat_intelligence/malware_url/crdfParser.php
+http://172.16.0.188/threat_intelligence/malware_url/blocklistParser.php
+http://172.16.0.188/threat_intelligence/malware_url/urlhausParser.php
+http://172.16.0.188/threat_intelligence/malware_url/MDLParser.php
+http://172.16.0.188/threat_intelligence/malware_url/dshieldLowParser.php
+http://172.16.0.188/threat_intelligence/malware_url/dshieldMediumParser.php
+http://172.16.0.188/threat_intelligence/malware_url/dshieldHighParser.php

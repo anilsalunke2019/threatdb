@@ -1,0 +1,11 @@
+-- Find duplicates ip_address
+select count(1) from blocked_ips where id  not in (select A.* from (select min(id) from  blocked_ips group by ip_address)A);
+
+-- delete duplicates ip_address
+delete from blocked_ips where id not in (select A.* from (select min(id) from  blocked_ips group by ip_address)A);
+
+-- Find duplicates urls
+select count(1) from malware_urls where id  not in (select A.* from (select min(id) from  malware_urls group by url)A);
+
+-- delete duplicates urls
+delete from malware_urls where id not in (select A.* from (select min(id) from  malware_urls group by url)A);
