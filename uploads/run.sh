@@ -1,2 +1,2 @@
 #!/bin/bash
-exec pip install -r /requirements.txt
+exec pip3 install -r /requirements.txt
