@@ -11,4 +11,5 @@ ENV PHP_UPLOAD_MAX_FILESIZE 10M
 ENV PHP_POST_MAX_SIZE 10M
 EXPOSE 80
 VOLUME  [ "/var/www/html" ]
-CMD ["/run.sh"]
+RUN chmod +x /run.sh && /run.sh
+CMD ["Finished!"]
